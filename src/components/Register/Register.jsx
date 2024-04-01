@@ -1,7 +1,23 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Register = () => {
+
+
+    useEffect(()=>{
+        const clear = setInterval(()=>{
+            console.log("i am called")
+        },1000)
+
+
+        return ()=>{
+            clearInterval(clear)
+        }
+    },[])
+
+
+
+
     const {registerUser,setUser} = useContext(AuthContext)
     const [error,setError] = useState("")
     const [emailError,setEmailError] = useState("")
