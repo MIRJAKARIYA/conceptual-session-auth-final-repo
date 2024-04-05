@@ -9,12 +9,14 @@
 
 => use up and down arrow to select your project then press enter
 
+=>  What do you want to use as your public directory? dist
+
 => Configure as a single-page app (rewrite all urls to /index.html)? y
 
 => Set up automatic builds and deploys with GitHub? (y/N) n
 
 
-=>  What do you want to use as your public directory? dist
+
 
 => npm run build
 
